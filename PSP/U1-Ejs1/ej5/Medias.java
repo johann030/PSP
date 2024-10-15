@@ -3,23 +3,23 @@ package ej5;
 import java.util.Scanner;
 
 //Proceso hijo
-public class Media {
+public class Medias {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		double numeros;
-		double sumando = 0;
+		int numeros;
+		int sumando = 0;
 		int cont = 0;
 		do {
-			numeros = sc.nextDouble();
+			numeros = sc.nextInt();
 			if (numeros != 0) {
 				sumando = sumando + numeros;
 				cont++;
 			}
 		} while (numeros != 0);
 
-		Double media = sumando / cont;
+		int media = sumando / cont;
 		System.out.println("La media es: " + media);
 		System.out.println(cont);
 		System.out.println(sumando);
