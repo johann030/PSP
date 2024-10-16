@@ -6,7 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="U1-Ejs1"/>
+	<classpathentry kind="src" path="U1-Ej1"/>
 	<classpathentry kind="src" path="U1-Ej2"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

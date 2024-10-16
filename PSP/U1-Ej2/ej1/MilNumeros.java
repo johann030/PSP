@@ -20,7 +20,6 @@ public class MilNumeros {
 		 */
 		String lineas;
 		BufferedReader br = null;
-		int numeros;
 		int num1;
 		int num2;
 		int suma;
@@ -33,7 +32,7 @@ public class MilNumeros {
 			num1 = sc.nextInt();
 
 			num2 = sc.nextInt();
-			
+			System.out.println("dentro hijo");
 			while ((lineas = br.readLine()) != null) {
 				if((cont >= num1) && (cont <= num2)) {
 					suma = Integer.parseInt(lineas);
