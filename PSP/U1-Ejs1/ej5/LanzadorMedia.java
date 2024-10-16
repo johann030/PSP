@@ -11,7 +11,6 @@ import java.util.Scanner;
 public class LanzadorMedia {
 //Proceso padre
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ProcessBuilder pb = new ProcessBuilder(args);
 		InputStream is;
 		InputStreamReader isr;

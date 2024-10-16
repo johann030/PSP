@@ -1,6 +1,8 @@
 package ej1;
 
 import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -17,33 +19,44 @@ public class MilNumeros {
 		 * pedirán por teclado. El programa principal mostrará la suma total.
 		 */
 		String lineas;
+		BufferedReader br = null;
 		int numeros;
 		int num1;
 		int num2;
 		int suma;
+		int cont = 0;
+		int resultado = 0;
 		Scanner sc = new Scanner(System.in);
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("numeros.dat"));
+			br = new BufferedReader(new FileReader("numeros.dat"));
 
-			
-			System.out.println("Introduzca el primer numero");
 			num1 = sc.nextInt();
-			System.out.println("Introduzca el segundo numero");
+
 			num2 = sc.nextInt();
-			while((lineas = br.readLine()) != null) {
-				System.out.println(lineas);
-				if((numeros = br.read()) != -1) {
-					
+			
+			while ((lineas = br.readLine()) != null) {
+				if((cont >= num1) && (cont <= num2)) {
+					suma = Integer.parseInt(lineas);
+					resultado = resultado + suma;
 				}
-				
+				cont++;
 			}
-			br.close();
+
+			System.out.println("La suma entre el numero " + num1 + " y el numero " + num2 + " es = " + resultado);
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+		} finally {
+			if (br != null) {
+				try {
+					br.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
 		}
 		sc.close();
 	}
-
 }
