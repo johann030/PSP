@@ -1,4 +1,4 @@
-package ej2;
+package ej3;
 
 public class HiloC extends Thread {
 
