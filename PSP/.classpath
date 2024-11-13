@@ -8,7 +8,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="U1-Ejs1"/>
 	<classpathentry kind="src" path="U1-Ejs2"/>
-	<classpathentry kind="src" path="U2"/>
+	<classpathentry kind="src" path="U2-Ejs1"/>
+	<classpathentry kind="src" path="U2-Ejs2"/>
 	<classpathentry kind="src" path="EjemplosCristina"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
