@@ -1,19 +1,21 @@
 package u2.ej2.ej2;
 
 public class Cliente {
-	private String cuenta, nombre;
+	private Cuenta cuenta;
+	private String nombre;
 	private int cantidadRetirada, totalRetirada;
 
-	Cliente(int cantidadRetirada, int totalRetirada) {
+	Cliente(Cuenta cuenta, int cantidadRetirada, int totalRetirada) {
+		this.cuenta = cuenta;
 		this.cantidadRetirada = cantidadRetirada;
 		this.totalRetirada = totalRetirada;
 	}
 
-	public String getCuenta() {
+	public Cuenta getCuenta() {
 		return cuenta;
 	}
 
-	public void setCuenta(String cuenta) {
+	public void setCuenta(Cuenta cuenta) {
 		this.cuenta = cuenta;
 	}
 

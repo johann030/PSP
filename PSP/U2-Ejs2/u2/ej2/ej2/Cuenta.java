@@ -18,7 +18,7 @@ public class Cuenta {
 	}
 
 	public void comprobarSaldo() {
-
+		System.out.println("Esto hay en la cuenta: " + saldo);
 	}
 
 	public int getSaldo() {
