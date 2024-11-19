@@ -1,6 +1,6 @@
 package u2.ej2.ej2;
 
-public class Cliente {
+public class Cliente extends Thread{
 	private Cuenta cuenta;
 	private String nombre;
 	private int cantidadRetirada, totalRetirada;
@@ -9,6 +9,11 @@ public class Cliente {
 		this.cuenta = cuenta;
 		this.cantidadRetirada = cantidadRetirada;
 		this.totalRetirada = totalRetirada;
+	}
+	
+	@Override
+	public void run() {
+		
 	}
 
 	public Cuenta getCuenta() {
