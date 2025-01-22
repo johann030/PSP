@@ -12,7 +12,7 @@ public class Cliente {
 			System.out.println("Creando socket cliente");
 			Socket clientSocket = new Socket();
 			System.out.println("Estableciendo conexión");
-			InetSocketAddress addr = new InetSocketAddress("172.30.104.152", 800);
+			InetSocketAddress addr = new InetSocketAddress("Localhost", 5555);
 			clientSocket.connect(addr);
 
 			InputStream is = clientSocket.getInputStream();

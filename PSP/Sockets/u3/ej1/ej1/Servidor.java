@@ -20,11 +20,11 @@ public class Servidor {
 			InputStream is = socket.getInputStream();
 			InputStreamReader isr = new InputStreamReader(is);
 			BufferedReader br = new BufferedReader(isr);
-			String linea = br.readLine();
+			String linea;
 
-			while (linea != null) {
+			while ((linea = br.readLine()).equals("Salir")) {
 				System.out.println("*ECO* " + linea + " *ECO*");
-				linea = br.readLine();
+				
 			}
 
 			OutputStream os = socket.getOutputStream();
