@@ -10,10 +10,6 @@ import java.util.Scanner;
 public class ClienteNumeroRandom {
 
 	public static void main(String[] args) {
-
-	}
-
-	public void cliente() {
 		System.out.println("Conectando al servidor...");
 		try (Scanner sc = new Scanner(System.in);
 				Socket cliente = new Socket("Localhost", 5555);
@@ -31,5 +27,4 @@ public class ClienteNumeroRandom {
 		}
 		System.out.println("Desconectado del servidor.");
 	}
-
 }

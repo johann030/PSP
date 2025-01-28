@@ -9,7 +9,8 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class ServidorNumeroRandom {
-	public void servidor() {
+
+	public static void main(String[] args) {
 		System.out.println("Creando servidor...");
 		int numRandom = (int) (Math.random() * (20 + 1)) + 1;
 		int linea;
@@ -44,8 +45,7 @@ public class ServidorNumeroRandom {
 			}
 
 		} catch (Exception e) {
-
+			e.printStackTrace();
 		}
 	}
-
 }
