@@ -9,9 +9,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ClienteHasta5 {
-	private String usuario;
-	private int contrasenia;
-
 	public static void main(String[] args) {
 		System.out.println("Conectando al servidor...");
 //		ArrayList<Socket> n = new ArrayList<>(5);
@@ -30,7 +27,6 @@ public class ClienteHasta5 {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		System.out.println("Desconectado del servidor.");
 	}
-
 }
