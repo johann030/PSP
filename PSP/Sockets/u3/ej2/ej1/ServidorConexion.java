@@ -25,10 +25,11 @@ public class ServidorConexion {
 			while ((linea = br.readLine()) != null) {
 				System.out.println(linea);
 			}
+			System.out.println("Apagando servidor...");
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		System.out.println("Servidor apagado.");
 	}
-
 }
