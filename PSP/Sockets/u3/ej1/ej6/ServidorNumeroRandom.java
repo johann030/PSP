@@ -20,6 +20,7 @@ public class ServidorNumeroRandom {
 				ServerSocket server = new ServerSocket(5555);
 				Socket socket = server.accept();
 				OutputStream os = socket.getOutputStream();
+				
 				InputStream is = socket.getInputStream();
 				InputStreamReader isr = new InputStreamReader(is);
 				BufferedReader br = new BufferedReader(isr)) {
